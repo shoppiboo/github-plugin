@@ -62,6 +62,12 @@ public class GitHubRepositoryName {
             Pattern.compile("https?://([^/]+)/([^/]+)/([^/]+)/?"),
             Pattern.compile("git://([^/]+)/([^/]+)/([^/]+)/?"),
             Pattern.compile("(?:git\\+)?ssh://(?:.+@)?([^/]+)/([^/]+)/([^/]+)/?"),
+
+            /**
+             * for GitBucket
+             */
+            Pattern.compile("https?://([^/]+)/[^/]+/([^/]+)/([^/]+)/?"),
+            Pattern.compile("https?://([^/]+)/[^/]+/[^/]+/([^/]+)/([^/]+)\\.git(?:/)?"),
     };
 
     /**

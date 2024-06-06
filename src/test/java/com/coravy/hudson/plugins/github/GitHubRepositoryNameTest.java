@@ -75,6 +75,8 @@ public class GitHubRepositoryNameTest {
             "git+ssh://git@github.com/jenkinsci/jenkins.git, github.com, jenkinsci, jenkins",
             "git+ssh://org-12345@github.com/jenkinsci/jenkins.git, github.com, jenkinsci, jenkins",
             "git+ssh://github.com/jenkinsci/jenkins, github.com, jenkinsci, jenkins",
+            "http://host/gitbucket/jenkinsci/jenkins, host, jenkinsci, jenkins",
+            "http://host/gitbucket/git/jenkinsci/jenkins.git, host, jenkinsci, jenkins",
     })
     public void githubFullRepo(String url, String host, String user, String repo) {
         assertThat(url, repo(allOf(
